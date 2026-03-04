@@ -1,6 +1,6 @@
-# From Prompt to Web App
+# AI Lab - InfAU Workshop
 
-**A hands-on workshop for InfAU — 2 hours**
+**A hands-on workshop for InfAU - 2 hours**
 
 Build an interactive web application using AI-assisted coding. No web development experience needed.
 
@@ -12,10 +12,10 @@ Build an interactive web application using AI-assisted coding. No web developmen
 
 To hit the ground running, please complete these steps before we meet:
 
-1. **Install VS Code** — [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
-2. **Sign up for Claude** ($20/mo Pro or $100/mo Max) — [https://claude.ai/pricing](https://claude.ai/pricing)
-3. **Create a GitHub account** (free) — [https://github.com/signup](https://github.com/signup)
-   The instructor will send you an org invitation — accept it before the session.
+1. **Install VS Code** - [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+2. **Sign up for Claude** ($20/mo Pro or $100/mo Max) - [https://claude.ai/pricing](https://claude.ai/pricing)
+3. **Create a GitHub account** (free) - [https://github.com/signup](https://github.com/signup)
+   The instructor will send you an org invitation - accept it before the session.
 
 That's it. We'll do the rest together.
 
@@ -46,7 +46,7 @@ Create a new folder called my-workshop-project and open it as a VS Code workspac
 Install the "Live Server" extension in VS Code.
 ```
 
-This gives you a local web server with auto-reload — when you save a file, the browser refreshes automatically. Right-click any `.html` file → **Open with Live Server** to use it.
+This gives you a local web server with auto-reload - when you save a file, the browser refreshes automatically. Right-click any `.html` file → **Open with Live Server** to use it.
 
 ### Sanity Check
 
@@ -57,7 +57,7 @@ Create a file called hello.html with a page that says "Hello from [your name]!"
 with a nice gradient background. Open it with Live Server.
 ```
 
-You should see a styled page open in your browser. If it works — you're all set.
+You should see a styled page open in your browser. If it works - you're all set.
 
 ---
 
@@ -72,7 +72,7 @@ You should see a styled page open in your browser. If it works — you're all se
 **Key tips:**
 
 - **Be specific** about what you want
-- **Iterate** — start simple, add features one by one
+- **Iterate** - start simple, add features one by one
 - **If something breaks**, just tell Claude *"this broke, fix it"*
 - **Use `@filename`** to point Claude at specific files
 
@@ -82,9 +82,9 @@ You should see a styled page open in your browser. If it works — you're all se
 
 These optional tips help Claude produce more polished results. Skim now, refer back later.
 
-### A) Scaffolding — Start with a Real App
+### A) Scaffolding - Start with a Real App
 
-The starter prompts create plain HTML files — that's perfectly fine. But if you want a more professional setup with a component library and hot reload, ask Claude to scaffold a project first:
+The starter prompts create plain HTML files - that's perfectly fine. But if you want a more professional setup with a component library and hot reload, ask Claude to scaffold a project first:
 
 ```
 Create a new Vite + React + TypeScript project in this folder. Install
@@ -94,13 +94,13 @@ Initialize the project and start the dev server.
 
 This gives you:
 
-- **Hot reload** — see changes instantly without refreshing
-- **shadcn/ui** — a library of polished, accessible UI components
-- **Tailwind CSS** — utility classes for fast, consistent styling
+- **Hot reload** - see changes instantly without refreshing
+- **shadcn/ui** - a library of polished, accessible UI components
+- **Tailwind CSS** - utility classes for fast, consistent styling
 
-Then use the project's starter prompt as a follow-up. This is **completely optional** — plain HTML works great for the workshop.
+Then use the project's starter prompt as a follow-up. This is **completely optional** - plain HTML works great for the workshop.
 
-### B) Skills — Claude's Hidden Superpowers
+### B) Skills - Claude's Hidden Superpowers
 
 Type a **slash command** before your prompt to activate a specialized mode:
 
@@ -125,9 +125,9 @@ Drop these phrases into any prompt to improve the output:
 | `"use Tailwind CSS for styling"`          | Utility-first, consistent design           |
 | `"add loading states"`                    | Professional feel while data loads         |
 
-**Describe the vibe you want** — *"minimal and clean"*, *"data-dense dashboard"*, *"playful and colorful"* all work.
+**Describe the vibe you want** - *"minimal and clean"*, *"data-dense dashboard"*, *"playful and colorful"* all work.
 
-**Use references** — *"make it look like the Stripe dashboard"* or paste a screenshot and say *"match this style"*.
+**Use references** - *"make it look like the Stripe dashboard"* or paste a screenshot and say *"match this style"*.
 
 ---
 
@@ -161,31 +161,9 @@ Use a dark background. Make it fullscreen.
 
 ---
 
-### Project B: Street Network Analysis Map
+### Project B: Solar Position Dashboard
 
-**You need:** `weimar-streets.geojson` in your project folder (provided in `workshop/data/weimar/`).
-
-**Starter prompt:**
-
-```
-Create a web page that loads weimar-streets.geojson and draws each street
-segment on an SVG canvas. Color segments by their length property
-(short=green, long=red). Add a legend. Make it fullscreen. Use a dark
-background. Note: coordinates are near (0,0), not real-world lat/lon,
-so use a plain SVG or Canvas — not a map library.
-```
-
-**Next steps:**
-
-1. *"Add a click handler that highlights the selected street and shows its length"*
-2. *"Calculate and display basic network statistics: total length, number of segments, average segment length"*
-3. *"Add a zoom/pan interaction so I can explore the network"*
-
----
-
-### Project C: Solar Position Dashboard
-
-**You need:** No data file — everything is calculated.
+**You need:** No data file - everything is calculated.
 
 **Starter prompt:**
 
@@ -204,9 +182,9 @@ Draw it with SVG. Make it look professional with a dark theme.
 
 ---
 
-### Project D: Evolutionary Algorithm Playground
+### Project C: Evolutionary Algorithm Playground
 
-**You need:** No data file — everything is procedurally generated.
+**You need:** No data file - everything is procedurally generated.
 
 **Starter prompt:**
 
@@ -225,9 +203,37 @@ fitness score. Add start/stop/reset buttons.
 
 ---
 
+### Project D: Free Topic
+
+**Build anything you want.** This is the open-ended option — bring your own idea, your own data, or just experiment.
+
+**How to start:** Describe what you want to Claude in plain language. A good starter prompt includes:
+
+1. What the page should do
+2. What it should look like
+3. What data it uses (if any)
+
+**Starter prompt template:**
+
+```
+Create a web page that [does what]. It should [look/feel like what].
+[Optional: It uses this data: ...]
+Make it fullscreen with a clean, modern design.
+```
+
+**Ideas if you need inspiration:**
+
+- A personal dashboard (weather, calendar, to-do list)
+- A data visualization of something you care about (bring a CSV or JSON file)
+- A tool for your daily workflow (unit converter, color palette generator, note-taking app)
+- A simple game (memory cards, quiz, reaction timer)
+- A portfolio page or interactive CV
+
+---
+
 ## Part 4: Show & Tell (15 min)
 
-Everyone shows their screen for 1–2 minutes. No slides needed — just show what you built and what surprised you.
+Everyone shows their screen for 1–2 minutes. No slides needed - just show what you built and what surprised you.
 
 ---
 
@@ -277,9 +283,9 @@ The instructor will merge your PR, and your app will be live within a minute.
 
 Want to keep experimenting? Try feeding Claude your own data:
 
-- **OpenStreetMap exports** via [Overpass API](https://overpass-turbo.eu/) — buildings, roads for any city
+- **OpenStreetMap exports** via [Overpass API](https://overpass-turbo.eu/) - buildings, roads for any city
 - **Open 3D city models** from CityGML repositories (Berlin, Helsinki, NYC all have open data)
-- **NASA POWER API** for solar radiation data — free, no key needed
-- **CSV datasets** from your own research — Claude can parse and visualize anything
+- **NASA POWER API** for solar radiation data - free, no key needed
+- **CSV datasets** from your own research - Claude can parse and visualize anything
 
 See also: [`workshop/cheatsheet.md`](cheatsheet.md) for a Claude Code quick reference.

@@ -1,4 +1,4 @@
-# Project C: Solar Position Dashboard
+# Project B: Solar Position Dashboard
 
 ## What You'll Build
 

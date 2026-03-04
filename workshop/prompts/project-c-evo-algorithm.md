@@ -1,4 +1,4 @@
-# Project D: Evolutionary Algorithm Playground
+# Project C: Evolutionary Algorithm Playground
 
 ## What You'll Build
 
@@ -6,7 +6,7 @@ A visual genetic algorithm that evolves rectangle packing layouts in real-time.
 
 ## Setup
 
-No data files needed — everything is procedurally generated.
+No data files needed - everything is procedurally generated.
 
 ---
 
