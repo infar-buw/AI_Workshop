@@ -36,8 +36,8 @@ function useGeoData(): GeoData | null {
   const [data, setData] = useState<GeoData | null>(null)
   useEffect(() => {
     Promise.all([
-      fetch('/weimar-buildings-3d.geojson').then((r) => r.json()),
-      fetch('/weimar-streets.geojson').then((r) => r.json()),
+      fetch('./weimar-buildings-3d.geojson').then((r) => r.json()),
+      fetch('./weimar-streets.geojson').then((r) => r.json()),
     ]).then(([buildings, streets]) => {
       let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity
       for (const f of buildings.features) {
