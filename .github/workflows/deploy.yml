@@ -27,18 +27,18 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        working-directory: AI_Workshop/isovist-app
+        working-directory: isovist-app
         run: npm install
 
       - name: Build
-        working-directory: AI_Workshop/isovist-app
+        working-directory: isovist-app
         run: npm run build
 
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: AI_Workshop/isovist-app/dist
+          path: isovist-app/dist
 
       - uses: actions/deploy-pages@v4
         id: deployment
