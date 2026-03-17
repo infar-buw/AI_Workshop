@@ -235,7 +235,11 @@ function Scene({ data }: { data: GeoData }) {
         </mesh>
       )}
 
-      <OrbitControls ref={orbitRef} makeDefault />
+      <OrbitControls
+        ref={orbitRef}
+        makeDefault
+        mouseButtons={{ LEFT: undefined as any, MIDDLE: THREE.MOUSE.DOLLY, RIGHT: THREE.MOUSE.ROTATE }}
+      />
     </>
   )
 }
